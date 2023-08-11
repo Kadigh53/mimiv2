@@ -1,0 +1,21 @@
+cat << a$?
+./minishell || minishell
+$df (df doesnt exist)
+$HOME/../../bin/ls
+history 
+> as
+cat < file(doesnt exist) > test
+
+```
+minishell $> export a=ls
+minishell $> $a
+Makefile        free_mem.o      minishell       minishell.o     signal.o
+execution       init.c          minishell.c     notes.txt       utils
+free_mem.c      init.o          minishell.h     signal.c
+minishell $> $fdsfsdf
+minishell(77850,0x114abbdc0) malloc: *** error for object 0x5000000000000000: pointer being freed was not allocated
+minishell(77850,0x114abbdc0) malloc: *** set a breakpoint in malloc_error_break to debug
+[1]    77850 abort      ./minishell
+```
+
+syntax error near unexpected token `|' then bash-3.2$ echo $?
